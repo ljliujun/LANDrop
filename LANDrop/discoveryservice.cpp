@@ -111,6 +111,7 @@ void DiscoveryService::socketReadyRead()
 
         if (isLocalAddress(addr))
             continue;
+        
 
         QJsonDocument json = QJsonDocument::fromJson(data);
         if (!json.isObject())
