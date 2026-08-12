@@ -108,6 +108,7 @@ void DiscoveryService::socketReadyRead()
         QHostAddress addr;
         quint16 port;
         socket.readDatagram(data.data(), size, &addr, &port);
+        
 
         if (isLocalAddress(addr))
             continue;
